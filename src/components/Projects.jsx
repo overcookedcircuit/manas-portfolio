@@ -2,26 +2,29 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import crc from '../assets/images/CRC_2023-2024.jpg';
+import animal from '../assets/images/animal.png';
+import robotic from '../assets/images/robotics-logo.png';
+import controller from '../assets/images/controller.png';
 
 const projectData = [
   {
     title: "CRC Robotics Website",
     description: "Team site for the robotics competition.",
-    link: "https://vanopoly.crcrobotics.com/en/Home/",
-    image: crc,
+    link: "/robotics",
+    image: robotic,
+    //path to robotics site "https://vanopoly.crcrobotics.com/en/Home/"
   },
   {
     title: "Animal Adoption Site",
     description: "Site built with PHP to adopt animals.",
     link: "http://hoviragallatmentes.com/",
-    image: "/path_to_screenshot2.png",
+    image: animal,
   },
   {
     title: "Games",
     description: "Games made with various game engines",
     link: "/games",
-    image: "/path_to_screenshot2.png",
+    image: controller,
   },
   // Add more projects here...
 ];
