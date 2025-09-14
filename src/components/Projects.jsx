@@ -1,13 +1,14 @@
 // src/components/Projects.jsx
 
 import React from 'react';
+import crc from '../assets/images/CRC_2023-2024.jpg';
 
 const projectData = [
   {
     title: "CRC Robotics Website",
     description: "Team site for the robotics competition.",
     link: "https://vanopoly.crcrobotics.com/en/Home/",
-    image: "/path_to_screenshot1.png",
+    image: crc,
   },
   {
     title: "Animal Adoption Site",
