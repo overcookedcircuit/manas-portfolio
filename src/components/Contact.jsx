@@ -11,7 +11,7 @@ export default function Contact() {
         Want to work together? Reach out:
       </p>
       <ul className="mt-4 space-y-2">
-        <li>Email: <a href="mailto:your-email@example.com" className="text-blue-600">your-email@example.com</a></li>
+        <li>Email: <a href="mailto:manaspatel31122004@gmail.com" className="text-blue-600">manaspatel31122004@gmail.com</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" className="text-blue-600">LinkedIn Profile</a></li>
         <li>GitHub: <a href="https://github.com/overcookedcircuit" target="_blank" className="text-blue-600">overcookedcircuit</a></li>
       </ul>
