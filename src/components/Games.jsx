@@ -3,22 +3,29 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import vid1 from "../assets/videos/greenfoot.mp4";
 import vid2 from "../assets/videos/greenfoot2.mp4";
+import vid3 from "../assets/videos/roboflora1.mp4";
+import vid4 from "../assets/videos/roboflora2.mp4";
 
 const gamesData = [
   {
     title: "Grazing Wombat",
-    description: "Description for Game 1",
+    description: "Boss fight from Grazing Wombat",
     video: vid1,
   },
   {
     title: "Grazing Wombat",
-    description: "Description for Game 2",
+    description: "Final boss fight from Grazing Wombat",
     video: vid2,
   },
   {
-    title: "Game 3",
-    description: "Description for Game 3",
-    video: "/videos/game3.mp4",
+    title: "Roboflora",
+    description: "3D Open world game",
+    video: vid3,
+  },
+  {
+    title: "Roboflora",
+    description: "Final boss fight of Roboflora",
+    video: vid4,
   },
 ];
 
