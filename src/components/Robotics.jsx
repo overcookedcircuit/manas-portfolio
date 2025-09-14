@@ -73,6 +73,37 @@ export default function Robotics() {
                 </div>
             </div>
             </section>
+            <section className="mt-12">
+                <div className="p-6">
+                    <h1 className="text-3xl font-bold mb-6">Robotics Season 2023-2024</h1>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* First Video */}
+                    <div className="w-full aspect-video">
+                        <iframe
+                        className="w-full h-full rounded-xl shadow-lg"
+                        src="https://www.youtube.com/embed/-8USigVCoVs"
+                        title="CRC Robotics 2024 - Vanier College"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        ></iframe>
+                    </div>
+
+                    {/* Second Video */}
+                    <div className="w-full aspect-video">
+                        <iframe
+                        className="w-full h-full rounded-xl shadow-lg"
+                        src="https://www.youtube.com/embed/SxM7DLkWRds"
+                        title="CRC Robotics 2024 - Vanier College (Highlights)"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        ></iframe>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </div>
         </div>
     );
