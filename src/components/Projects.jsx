@@ -30,39 +30,33 @@ const projectData = [
 ];
 
 export default function Projects() {
-  const navigate = useNavigate();
+  const projects = [
+    {
+      title: "RoboFlora",
+      desc: "A 3D low poly game about a robot restoring a polluted world.",
+    },
+    {
+      title: "Portfolio Website",
+      desc: "A clean personal portfolio built with React & Tailwind.",
+    },
+  ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6 md:px-0">
-        <h2 className="text-3xl font-bold mb-6">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projectData.map((proj, i) => {
-            const isExternal = proj.link.startsWith('http');
-            return (
-              <div
-                key={i}
-                className="bg-white rounded-lg shadow hover:shadow-lg transition p-6 cursor-pointer"
-                onClick={() => !isExternal && navigate(proj.link)}
-              >
-                {proj.image && (
-                  <img src={proj.image} alt={proj.title} className="rounded w-full mb-4" />
-                )}
-                <h3 className="text-2xl font-semibold mb-2">{proj.title}</h3>
-                <p className="text-gray-600 mb-4">{proj.description}</p>
-                {isExternal && (
-                  <a
-                    href={proj.link}
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
-                )}
-              </div>
-            );
-          })}
+    <section id="projects" className="py-20 bg-white text-dark">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.map((p, idx) => (
+            <div
+              key={idx}
+              className="project-card bg-light p-6 rounded-xl shadow-md hover:shadow-lg transition"
+              data-aos="fade-up"
+              data-aos-delay={idx * 150}
+            >
+              <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
+              <p className="text-gray-700">{p.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

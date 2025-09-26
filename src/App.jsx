@@ -7,38 +7,36 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Games from "./components/Games";
 import Robotics from "./components/Robotics";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className="font-sans text-gray-900">
-        <Navbar />
-        <main className="pt-20"> {/* pt-20 to offset fixed navbar */}
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <About />
-                  <Projects />
-                  <Contact />
-                </>
-              }
-            />
-            <Route path="/games" element={<Games />} />
-            <Route path="/robotics" element={<Robotics />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="font-sans text-gray-900">
+      <Navbar />
+      <main className="pt-20"> {/* pt-20 to offset fixed navbar */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/games" element={<Games />} />
+          <Route path="/robotics" element={<Robotics />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
