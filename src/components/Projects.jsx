@@ -20,7 +20,7 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       desc: "A clean personal portfolio built with React & Tailwind. You're looking at it right now :)",
-      link: "/portfolio",
+      link: "https://manas-portfolio-beta.vercel.app/",
       image: web,
     },
     {
