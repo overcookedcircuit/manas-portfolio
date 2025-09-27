@@ -31,7 +31,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium text-gray-900">Email</h4>
-                  <p className="text-gray-600">manas.patel@example.com</p>
+                  <p className="text-gray-600">manaspatel31122004@gmail.com</p>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium text-gray-900">Phone</h4>
-                  <p className="text-gray-600">(123) 456-7890</p>
+                  <p className="text-gray-600">(123) 456-7890 wrong number</p>
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium text-gray-900">Location</h4>
-                  <p className="text-gray-600">Montreal, QC</p>
+                  <p className="text-gray-600">Laval, QC</p>
                 </div>
               </div>
             </div>
@@ -63,22 +63,16 @@ export default function Contact() {
               <h4 className="font-semibold mb-4">Connect with me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/overcookedcircuit"
                   className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-blue-500 hover:text-white transition"
                 >
                   <GitHub />
                 </a>
                 <a
-                  href="#"
+                  href="https://linkedin.com/in/manas-patel-0b7714296"
                   className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-blue-500 hover:text-white transition"
                 >
                   <Linkedin />
-                </a>
-                <a
-                  href="#"
-                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-blue-500 hover:text-white transition"
-                >
-                  <Twitter />
                 </a>
               </div>
             </div>

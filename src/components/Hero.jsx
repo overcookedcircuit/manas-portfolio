@@ -37,7 +37,7 @@ export default function Hero() {
       >
         I'm a computer science student passionate about{" "}
         <span className="font-semibold">web development</span>,{" "}
-        <span className="font-semibold">game development</span>, and{" "}
+        <span className="font-semibold">game development</span> and{" "}
         <span className="font-semibold">AI</span>.
       </p>
 

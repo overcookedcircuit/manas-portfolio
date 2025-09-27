@@ -11,7 +11,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-light text-dark">
+    <section id="skills" className="py-20 bg-gray-50 text-dark">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8">Skills</h2>
         <div className="flex flex-wrap justify-center gap-4">
