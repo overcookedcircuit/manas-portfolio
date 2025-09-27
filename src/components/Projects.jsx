@@ -1,14 +1,20 @@
 // src/components/Projects.jsx
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import web from '../assets/images/webhttps.png';
 import robotic from '../assets/images/robotics-logo.png';
 import controller from '../assets/images/controller.png';
 
-
 export default function Projects() {
   const navigate = useNavigate();
+
+  // initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
 
   const projects = [
     {
@@ -41,15 +47,21 @@ export default function Projects() {
             <div
               key={idx}
               className="project-card bg-light p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+              data-aos="fade-up"
+              data-aos-delay={idx * 150}
               onClick={() => {
                 if (p.external) {
-                  window.open(p.link, "_blank"); // external → open in new tab
+                  window.open(p.link, "_blank"); {/* navigate via external routing*/}
                 } else {
-                  navigate(p.link); // internal → use React Router
+                  navigate(p.link); {/* navigate to the page via internal routing*/}
                 }
               }}
             >
-              <img src={p.image} alt={p.title} className="w-full h-40 object-cover rounded-lg mb-4" />
+              <img
+                src={p.image}
+                alt={p.title}
+                className="w-full h-40 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
               <p className="text-gray-700">{p.desc}</p>
             </div>
