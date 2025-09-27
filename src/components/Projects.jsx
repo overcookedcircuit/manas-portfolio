@@ -22,6 +22,7 @@ export default function Projects() {
       desc: "A clean personal portfolio built with React & Tailwind. You're looking at it right now :)",
       link: "https://manas-portfolio-beta.vercel.app/",
       image: web,
+      external: true,
     },
     {
       title: "Robotics",
@@ -39,19 +40,16 @@ export default function Projects() {
           {projects.map((p, idx) => (
             <div
               key={idx}
-              onClick={() => navigate(p.link)}
               className="project-card bg-light p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
-              data-aos="fade-up"
-              data-aos-delay={idx * 150}
+              onClick={() => {
+                if (p.external) {
+                  window.open(p.link, "_blank"); // external → open in new tab
+                } else {
+                  navigate(p.link); // internal → use React Router
+                }
+              }}
             >
-              {/* Project Image */}
-              <img
-                src={p.image}
-                alt={p.title}
-                className="w-full h-40 object-contain mb-4 rounded-lg"
-              />
-
-              {/* Title & Description */}
+              <img src={p.image} alt={p.title} className="w-full h-40 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
               <p className="text-gray-700">{p.desc}</p>
             </div>
